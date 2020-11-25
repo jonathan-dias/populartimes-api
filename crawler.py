@@ -551,7 +551,6 @@ app = Flask(__name__)
 @app.route('/')
 def get_id():
 
-    
     api_key="AIzaSyBrMyfwVh1UjrwUT5ygyptW3EMot5SzMOc"
     request.headers.get("place_id") == str
 
