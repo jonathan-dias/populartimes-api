@@ -19,7 +19,6 @@ Flask==1.1.2
 geographiclib==1.50
 geopy==2.0.0
 idna==2.10
-pykernel==5.3.4
 python==7.18.1
 python-genutils==0.2.0
 pywidgets==7.5.1
