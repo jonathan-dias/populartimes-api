@@ -551,11 +551,11 @@ app = Flask(__name__)
 @app.route('/')
 def get_id():
 
-    place_id = str
+    
     api_key="AIzaSyBrMyfwVh1UjrwUT5ygyptW3EMot5SzMOc"
-    request.headers.get('place_id') == place_id
+    request.headers.get("place_id") == str
 
-    return get_populartimes(api_key, place_id)
+    return get_populartimes(api_key, str)
 
 
 if __name__ == "__main__":
