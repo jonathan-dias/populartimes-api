@@ -13,8 +13,8 @@ import urllib.parse
 import urllib.request
 from queue import Queue
 from time import sleep, time
-import requests
 
+import requests
 from geopy import Point
 from geopy.distance import geodesic, GeodesicDistance
 
@@ -32,7 +32,6 @@ USER_AGENT = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) "
 
 class PopulartimesException(Exception):
     """Exception raised for errors in the input.
-
     Attributes:
         expression -- input expression in which the error occurred
         message -- explanation of the error
@@ -73,7 +72,6 @@ def cover_rect_with_cicles(w, h, r):
     fully cover a rectangle of given width and height with
     circles of radius r. This algorithm uses a hexagonal
     honeycomb pattern to cover the area.
-
     :param w: width of rectangle
     :param h: height of reclangle
     :param r: radius of circles
@@ -116,7 +114,6 @@ def cover_rect_with_cicles(w, h, r):
 def get_circle_centers(b1, b2, radius):
     """
     the function covers the area within the bounds with circles
-
     :param b1: south-west bounds [lat, lng]
     :param b2: north-east bounds [lat, lng]
     :param radius: specified radius, adapt for high density areas
