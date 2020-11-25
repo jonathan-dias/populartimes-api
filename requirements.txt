@@ -19,9 +19,10 @@ Flask==1.1.2
 geographiclib==1.50
 geopy==2.0.0
 idna==2.10
-python==7.18.1
-python-genutils==0.2.0
-pywidgets==7.5.1
+ipykernel==5.3.4
+ipython==7.18.1
+ipython-genutils==0.2.0
+ipywidgets==7.5.1
 isort==5.5.1
 itsdangerous==1.1.0
 jedi==0.17.2
