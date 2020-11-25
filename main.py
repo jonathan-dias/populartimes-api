@@ -1,13 +1,16 @@
 import flask
 import crawler
+import requests
 
 app = flask.Flask(__name__)
+
 
 @app.route('/')
 def get_id():
 
+    place_id = str
     api_key="AIzaSyBrMyfwVh1UjrwUT5ygyptW3EMot5SzMOc"
-    place_id="ChIJJWoTrD_5zpQR7MUpPiNrGVk"
+    requests.headers.get('place_id') = str
 
     return crawler.get_populartimes(api_key, place_id)
 
