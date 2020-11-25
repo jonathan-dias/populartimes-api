@@ -552,9 +552,9 @@ app = Flask(__name__)
 def get_id():
 
     api_key="AIzaSyBrMyfwVh1UjrwUT5ygyptW3EMot5SzMOc"
-    request.headers.get("place_id") == str
+    place_id="ChIJJWoTrD_5zpQR7MUpPiNrGVk"
 
-    return get_populartimes(api_key, str)
+    return get_populartimes(api_key, place_id)
 
 
 if __name__ == "__main__":
