@@ -13,9 +13,7 @@ import urllib.parse
 import urllib.request
 from queue import Queue
 from time import sleep, time
-import os
-from flask import Flask, jsonify, request
-
+import requests
 from geopy import Point
 from geopy.distance import geodesic, GeodesicDistance
 
@@ -544,19 +542,3 @@ def run(_params):
     logging.info("Finished in: {}".format(str(datetime.datetime.now() - start)))
 
     return results
-
-
-app = Flask(__name__)
-
-@app.route('/')
-def get_id():
-
-    api_key="AIzaSyBrMyfwVh1UjrwUT5ygyptW3EMot5SzMOc"
-    place_id="ChIJJWoTrD_5zpQR7MUpPiNrGVk"
-
-    return get_populartimes(api_key, place_id)
-
-
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
