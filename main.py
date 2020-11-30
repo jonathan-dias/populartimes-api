@@ -11,7 +11,7 @@ def get_id():
     api_key="AIzaSyBrMyfwVh1UjrwUT5ygyptW3EMot5SzMOc"
     place_id = input("Qual é o PlaceID ?")
 
-    url = 'https://covidmapsapi.herokuapp.com?place_id={}'.format(place_id)
+    url = 'https://covidmapsapi.herokuapp.com/?place_id={}'.format(place_id)
     
     response = requests.get(url)
     print(response)
