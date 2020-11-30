@@ -8,11 +8,15 @@ app = flask.Flask(__name__)
 @app.route('/')
 def get_id():
 
-    place_id = str
+    url = "https://covidmapsapi.herokuapp.com/"
+    #data = {'place_id' : 'value'}
     api_key="AIzaSyBrMyfwVh1UjrwUT5ygyptW3EMot5SzMOc"
-    requests.headers.get('place_id') = str
+    #requests.post(url, data)
+    payload = {'key1': 'value1'}
 
-    return crawler.get_populartimes(api_key, place_id)
+    requests.get(url, params=payload)
+    
+    return crawler.get_populartimes(api_key, payload)
 
 
 if __name__ == '__main__':
