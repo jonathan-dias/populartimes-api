@@ -6,7 +6,7 @@ from flask import request
 app = flask.Flask(__name__)
 
 
-@app.route('/')
+@app.route('/id')
 def get_id():
 
     api_key="AIzaSyBrMyfwVh1UjrwUT5ygyptW3EMot5SzMOc"
