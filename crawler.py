@@ -300,16 +300,16 @@ def add_optional_parameters(detail_json, detail, rating, rating_n, popularity, c
     :return:
     """
 
-    if rating:
-        detail_json["rating"] = rating
-    elif "rating" in detail:
-        detail_json["rating"] = detail["rating"]
+    #if rating:
+     #   detail_json["rating"] = rating
+    #elif "rating" in detail:
+      #  detail_json["rating"] = detail["rating"]
 
-    if rating_n:
-        detail_json["rating_n"] = rating_n
+    #if rating_n:
+     #   detail_json["rating_n"] = rating_n
 
-    if "international_phone_number" in detail:
-        detail_json["international_phone_number"] = detail["international_phone_number"]
+    #if "international_phone_number" in detail:
+     #   detail_json["international_phone_number"] = detail["international_phone_number"]
 
     if current_popularity:
         detail_json["current_popularity"] = current_popularity
@@ -320,10 +320,10 @@ def add_optional_parameters(detail_json, detail, rating, rating_n, popularity, c
         detail_json["populartimes"] = popularity
 
         if wait_times:
-            detail_json["time_wait"] = wait_times
+           detail_json["time_wait"] = wait_times
 
     if time_spent:
-        detail_json["time_spent"] = time_spent
+       detail_json["time_spent"] = time_spent
 
     return detail_json
 
