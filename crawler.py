@@ -317,8 +317,6 @@ def add_optional_parameters(detail_json, detail, rating, rating_n, popularity, c
     if popularity:
         popularity, wait_times = get_popularity_for_day(popularity)
 
-        detail_json["populartimes"] = popularity
-
         if wait_times:
            detail_json["time_wait"] = wait_times
 
@@ -443,9 +441,9 @@ def get_populartimes_by_detail(api_key, detail):
 
     detail_json = {
         "id": detail["place_id"],
-        "name": detail["name"],
-        "address": address,
-        "types": detail["types"],
+        #"name": detail["name"],
+        #"address": address,
+        #"types": detail["types"],
         "coordinates": detail["geometry"]["location"]
     }
 
