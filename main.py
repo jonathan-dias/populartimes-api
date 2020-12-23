@@ -11,9 +11,11 @@ def get_id():
 
     api_key="AIzaSyBgirMwGs0VnNxz2Zt7uIDRiphaTktbmEE"
 
-    #r = requests.get('https://covidmapsapi.herokuapp.com', params=)
+    payload = {'place_id' : 'id'}
 
-    return crawler.get_populartimes(api_key, request.args['place_id'])
+    r = requests.get('https://covidmapsapi.herokuapp.com', params=payload)
+
+    return crawler.get_populartimes(api_key, r)
 
 
 if __name__ == '__main__':
