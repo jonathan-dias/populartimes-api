@@ -314,14 +314,14 @@ def add_optional_parameters(detail_json, detail, rating, rating_n, popularity, c
     if current_popularity:
         detail_json["current_popularity"] = current_popularity
 
-    if popularity:
-        popularity, wait_times = get_popularity_for_day(popularity)
+    #if popularity:
+     #   popularity, wait_times = get_popularity_for_day(popularity)
 
-        if wait_times:
-           detail_json["time_wait"] = wait_times
+      #  if wait_times:
+       #    detail_json["time_wait"] = wait_times
 
-    if time_spent:
-       detail_json["time_spent"] = time_spent
+    #if time_spent:
+     #  detail_json["time_spent"] = time_spent
 
     return detail_json
 
